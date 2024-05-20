@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="frontend.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="one">Welcome to CRUD Operations</h1>
+     <script>getData()</script> 
+    <form id="buttons">
+        <input type="text" id="id" placeholder="ID">
+        <input type="text" id="name" placeholder="NAME">
+        <input type="text" id="branch" placeholder="NUMBER">
+        <input type="text" id="email" placeholder="EMAIL">
+        <button onclick="addData()" type="button">Add User</button>
+    </form>
+    <table>
+        <thead>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Branch</td>
+            <td>Email</td>
+            <td>Action</td>
+        </thead>
+        <tbody id="userdata"></tbody>
+    </table>
+</body>
+</html>
